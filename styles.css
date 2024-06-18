@@ -1,0 +1,78 @@
+:root{
+    --primary: #010101;
+    --bg: white;
+}
+
+body {
+    font-family: 'Poppins', Sans-Serif;
+    background-color: #f4f4f4;
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 7%;
+    background-color: #1d4ab2cc;
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  .navbar  .navbar-logo  {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  .navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+.navbar .navbar-extra a{
+    color: #fff;
+}
+.navbar .navbar-extra a:hover{
+    color: #ffff00;
+}
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:  #1d4ab2cc;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#control h2{
+    padding: 3rem 0;
+    margin-bottom: 0;
+} 
+#direction{
+    padding: 0rem;
+}
+#control, #sensorData {
+    margin-top: 20px;
+}
+
+#control div {
+    margin-bottom: 10px;
+}
+
+#control button {
+    display: block;
+    margin-top: 10px;
+}

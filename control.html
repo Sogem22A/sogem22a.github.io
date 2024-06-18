@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Kontrol - Kereta Inspeksi IoT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js"></script>
+    <script src="slider.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">TKA-4A</a>
+        <div class="navbar-nav">
+          <a>Kereta Inspeksi IoT</a>
+        </div>
+        <div class="navbar-extra">
+        <a href="index.html">Home</a>
+        </div>
+       </nav>
+
+    <main>
+        <section id="control">
+            <h2>Kontrol Kereta Inspeksi</h2>
+            <div>
+                <label for="direction">Arah:</label>
+                <select id="direction">
+                    <option value="0">Berhenti</option>
+                    <option value="1">Maju</option>
+                    <option value="2">Mundur</option>
+                </select>
+            </div>
+            <div>
+                <label for="speed">Kecepatan:</label>
+                <input type="range" id="speed" min="0" max="255">
+            </div>
+            <button id="sendControl">Kirim</button>
+        </section>
+
+        <section id="sensorData">
+            <h2>Data Sensor Akselerometer</h2>
+            <div id="sensorValues">
+                <p>X-Axis: <span id="xAxis">0</span></p>
+                <p>Y-Axis: <span id="yAxis">0</span></p>
+                <p>Z-Axis: <span id="zAxis">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TKA - 22 A</p>
+    </footer>
+</body>
+</html>

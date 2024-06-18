@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Beranda</title>
+  
+  <!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- feather icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- my style -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  
+  <!--Navbar start-->
+ <nav class="navbar">
+  <a href="#" class="navbar-logo">TKA-4A</a>
+  <div class="navbar-nav">
+    <a href="#home">Home</a>
+    <a href="#produk">Product</a>
+    <a href="#about">Our Team</a>
+    <a href="control.html" class="action-btn">Get Started</a>
+  </div>
+  <div class="navbar-extra">
+    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+  </div>
+ </nav>
+
+ <script></script>
+  <!--Navbar end-->
+  
+  <!--hero section start-->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>WELCOME TO <span>INSPECTION TRAIN TKA-4A</span></h1>
+    </main>
+  </section>
+   <!--hero section end-->
+   
+   <!--produk start-->
+   <section id="produk" class="produk">
+     <h2>Product</h2>
+     <div class="row">
+       <div class="produk-img">
+         <img src="3d.JPG" alt="Produk">
+       </div>
+       <div class="content">
+         <h2>Kereta Inspeksi</h2>
+         <p align="justify">Kereta inspeksi adalah jenis kereta yang digunakan untuk melakukan pemeriksaan dan pemeliharaan jalur kereta api. Fungsi utama dari kereta inspeksi adalah untuk memastikan bahwa jalur kereta api tetap aman dan layak digunakan. Kereta inspeksi memungkinkan tim pemeliharaan untuk mengidentifikasi dan memperbaiki masalah dengan cepat sebelum terjadi kecelakaan atau gangguan operasional.</p>
+         <a href="control.html" class="action-btn">Get Started</a>
+        </div>
+     </div>
+   </section>
+   <!--produk end-->
+   
+  <!--tentang kami start-->
+   <section id="about" class="about">
+     <h2>Our Team</h2>
+    <!-- <p>Project ini memiliki beberapa departemen yang bertanggung jawab pada tugas masing-masing.</p>
+     <p>Dibawah ini adalah biodata tiap anggota departemen.</p>-->
+     <div class="slider">
+      <div class="slides">
+          <!-- Radio buttons for navigation -->
+          <input type="radio" name="radio-btn" id="radio1" checked>
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <!-- Slide images -->
+          <div class="slide first">
+              <img src="mekanikal.png" alt="Image 1">
+          </div>
+          <div class="slide">
+              <img src="electrical.png" alt="Image 2">
+          </div>
+          <div class="slide">
+              <img src="software.png" alt="Image 3">
+          </div>
+          <div class="slide">
+              <img src="jurnal.png" alt="Image 4">
+          </div>
+
+          <!-- Navigation auto manual -->
+          <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+          </div>
+      </div>
+
+      <!-- Navigation manual -->
+      <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+      </div>
+  </div>
+   </section>
+  <!--tentang kami end-->
+
+  <!--FOOTER START-->
+  <footer>
+    <div class="social">
+    <a href="https://www.instagram.com/sogem22?igsh=MWhsazJmd3BpMHNxcw==
+    " ><i data-feather="instagram"></i></a>
+  </div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#produk">Product</a>
+    <a href="#about">Ours Team</a>
+  </div>
+  <div class="credit">
+    <p>Created by<a href=""> TKA-4A</a>. | &copy: 2024.</p>
+  </div>
+</footer>
+  <!--FOOTER END-->
+   
+  <!-- feather icon -->
+  <script>
+      feather.replace();
+    </script>
+  <script src="slider.js"></script>
+</body>
+
+
+</html>
